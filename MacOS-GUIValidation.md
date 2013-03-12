@@ -2,13 +2,8 @@
 
 *DRAFT*
 
-Submit completed tests and debug.log files to:  {Name &lt;email&gt;}
-
-Version tested:
-{0.x.y release candidate N, or git commit}
-
-Test environment:
-{Operating System or other relevant info}
+This document is designed to be copied and pasted into a GitHub issue ticket, from the "Environment"
+heading on down.
 
 ## Test Setup
 
@@ -22,6 +17,14 @@ For example, for sanity-testing a release the setup might be:
 3. Run installer or follow installation instructions.
 4. Create a bitcoin.conf file in the default data directory (~/.bitcoin on Linux, etc; see sample.bitcoin.conf)
 
+## Environment
+
+Version tested:
+{0.x.y release candidate N, or git commit}
+
+Test environment:
+{Operating System or other relevant info}
+
 ## Tests
 
 *Note:* Open pairs of brackets are included for convenience: when pasted into an issue or pull request, these turn the
@@ -29,7 +32,7 @@ lists into checklists.
 
 ### Window close, no minimize options
 
-#### Steps
+***Steps:***
 
 1. [ ] Start Bitcoin-Qt.
 2. [ ] Open Preferences and choose "Window."
@@ -37,18 +40,19 @@ lists into checklists.
 4. [ ] Click OK.
 5. [ ] Hit the window-close button on the main window.
 
-#### Expect
+***Expect:***
 
 1. [ ] The window should close.
 2. [ ] Bitcoin-Qt should quit.
 3. [ ] The dock should not show Bitcoin-Qt to be running (either no icon, or icon present without the "LED").
 
-#### Result (choose one)
+
+***Result:*** (choose one)
 
 * [ ] PASS
 * [ ] FAIL
 
-Comments: (add here if necessary)
+***Comments:*** (add here if necessary)
 
 ### Final steps
 
