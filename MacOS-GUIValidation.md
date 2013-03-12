@@ -24,17 +24,29 @@ For example, for sanity-testing a release the setup might be:
 
 ## Tests
 
-### Window close
+*Note:* Open pairs of brackets are included for convenience: when pasted into an issue or pull request, these turn the
+lists into checklists.
 
-1. Start Bitcoin-Qt.
-2. Hit the window-close button.
+### Window close, no minimize options
 
-EXPECT:
+#### Steps
 
-1. The window should close *and* Bitcoin-Qt should quit.
-2. The dock should not show Bitcoin-Qt to be running (either no icon, or icon present without the "LED").
+1. [ ] Start Bitcoin-Qt.
+2. [ ] Open Preferences and choose "Window."
+3. [ ] Ensure no checkboxes are checked/ticked.
+4. [ ] Click OK.
+5. [ ] Hit the window-close button on the main window.
 
-Choose one: PASS / FAIL
+#### Expect
+
+1. [ ] The window should close.
+2. [ ] Bitcoin-Qt should quit.
+3. [ ] The dock should not show Bitcoin-Qt to be running (either no icon, or icon present without the "LED").
+
+#### Result (choose one)
+
+* [ ] PASS
+* [ ] FAIL
 
 Comments: (add here if necessary)
 
