@@ -30,22 +30,35 @@ Test environment:
 *Note:* Open pairs of brackets are included for convenience: when pasted into an issue or pull request, these turn the
 lists into checklists.
 
-### Window close, no minimize options
+### Main window: close
+
+***Steps:***
+
+1. [ ] Start Bitcoin-Qt.
+2. [ ] Click the window-close button.
+
+***Expect:***
+
+1. [ ] The application quits completely.
+
+***Result:*** (choose one)
+
+* [ ] PASS
+* [ ] FAIL
+
+***Comments:*** (add here if necessary)
+
+### Preferences: Window tab
 
 ***Steps:***
 
 1. [ ] Start Bitcoin-Qt.
 2. [ ] Open Preferences and choose "Window."
-3. [ ] Ensure no checkboxes are checked/ticked.
-4. [ ] Click OK.
-5. [ ] Hit the window-close button on the main window.
 
 ***Expect:***
 
-1. [ ] The window should close.
-2. [ ] Bitcoin-Qt should quit.
-3. [ ] The dock should not show Bitcoin-Qt to be running (either no icon, or icon present without the "LED").
-
+1. [ ] All checkboxes are shown as disabled.
+2. [ ] No checkbox can be ticked.
 
 ***Result:*** (choose one)
 
